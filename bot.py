@@ -97,8 +97,9 @@ async def addrole(ctx):
     role = ds.utils.get(member.server.roles, name="basic member")
     await client.add_roles(member, role)
 
+client.run(TOKEN)
 
+    
 conn.commit()
-
 cur.close()
 conn.close()
